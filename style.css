@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+
+:root {
+    --primary-clr: #FFB400;
+    --txt-main-clr: #2B2B2B;
+    --txt-sub-clr: #767676;
+
+    --bg-clr: #E4E6EB;
+
+    --side-bar-bg: #FAFAFA;
+    --side-bar-link-bg: #F0F0F6;
+    --side-bar-icon-clr: var(--txt-sub-clr);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-clr);
+}
+
+.nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 108px;
+  height: 100%;
+  background-color: var(--side-bar-bg);
+  box-shadow: 4px 0px 10px rgba(47, 122, 249, 0.1);
+  padding-block: 3.125rem;
+}
+
+.nav__toggle-theme {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__sidebar {
+  list-style: none;
+  margin-top: 10.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__item  {
+  margin-block: 1.5rem;
+  background-color: var(--side-bar-link-bg);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.nav__link-img {
+  filter: opacity(0.7);
+}
+
+/* .nav__link-img {
+  padding: 10px;
+  background-color: var(--side-bar-link-bg);
+  border-radius: 50%;
+} */
