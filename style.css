@@ -18,7 +18,7 @@
   --aside-bg: #fff;
   --aside-width: 305px;
 
-  --hire-me-trans: .2s;
+  --hire-me-trans: 0.2s;
 }
 
 /* html{
@@ -436,6 +436,7 @@ svg {
   font-size: 1.125rem;
   font-weight: 600;
   margin-top: 1.563rem;
+  text-align: center;
 }
 
 .tech__sub {
@@ -533,8 +534,12 @@ svg {
 }
 
 @media screen and (max-width: 768px) {
-  .tech__grid {
-    grid-template-columns: repeat(2, 1fr);
+    .tech__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+  .tech__header {
+    font-size: 1rem;
   }
 }
 
@@ -557,5 +562,8 @@ svg {
   }
 }
 
-@media screen and (max-width: 728px) {
+@media screen and (max-width: 500px) {
+  .tech__grid {
+    grid-template-columns: 1fr;
+  }
 }
