@@ -17,45 +17,310 @@
         <img src="/icons/contrast.svg" alt="">
       </a>
       <ul class="nav__sidebar">
-        <li class="nav__item">
-          <a href="" class="nav__link">
+        <li class="nav__item active">
+          <a href="#home" class="nav__link">
             <img src="/icons/home.svg" alt="" class="nav__link-img">
           </a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="#tech" class="nav__link">
             <img src="/icons/services.svg" alt="" class="nav__link-img">
           </a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="#education" class="nav__link">
             <img src="/icons/cv.svg" alt="" class="nav__link-img">
           </a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="#history" class="nav__link">
             <img src="/icons/portfolio.svg" alt="" class="nav__link-img">
           </a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="#" class="nav__link">
             <img src="/icons/blog.svg" alt="" class="nav__link-img">
           </a>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">
+          <a href="#" class="nav__link">
             <img src="/icons/contact.svg" alt="" class="nav__link-img">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="nav-top">
+      <ul class="nav-top__items">
+        <li class="nav-top__item">
+          <a href="#" class="nav-top__link">
+            <img src="/icons/menu.svg" alt="" class="nav-top__link-img">
+          </a>
+        </li>
+        <li class="nav-top__item">
+          <a href="#" class="nav-top__link">
+            <img src="/icons/menu-dots-vertical.svg" alt="" class="nav-top__link-img">
           </a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
-    <aside>
-
+    <aside class="aside">
+      <div class="aside__contents">
+        <div class="aside__item aside__item--profile">
+          <div class="profile__pic">
+            <img src="/images/JUAN_MIGUEL_ANDOY_NO_BG.png" alt="">
+          </div>
+          <h1 class="profile__name">Juan Miguel Pallo</h1>
+          <p class="profile__job">Software Developer</p>
+          <ul class="profile__links">
+            <li>
+              <a href="#">
+                <img src="/icons/facebook.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/icons/instagram.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/icons/linkedin.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="aside__item aside__item--info">
+          <div>
+            <span class="info__label">Age:&nbsp;</span>
+            <span class="info__val">24</span>
+          </div>
+          <div>
+            <span class="info__label">Residence:&nbsp;</span>
+            <span class="info__val">Bulacan</span>
+          </div>
+          <div>
+            <span class="info__label">Freelance:&nbsp;</span>
+            <span class="info__val info__val--succes">Available</span>
+          </div>
+          <div>
+            <span class="info__label">Address:&nbsp;</span>
+            <span class="info__val info__val--right">Santa Maria, Pulong Buhangin</span>
+          </div>
+        </div>
+        <div class="aside__item aside__item--extra">
+          <h1 class="extra__header">
+            Extra Skills
+          </h1>
+          <ul class="extra__list">
+            <li class="extra__item">
+              <img class="extra__icon" src="/icons/extra.svg" alt="">
+              <span class="extra__skill">Bootstrap</span>
+            </li>
+            <li class="extra__item">
+              <img class="extra__icon" src="/icons/extra.svg" alt="">
+              <span class="extra__skill">Sass</span>
+            </li>
+            <li class="extra__item">
+              <img class="extra__icon" src="/icons/extra.svg" alt="">
+              <span class="extra__skill">Adobe Photoshop</span>
+            </li>
+            <li class="extra__item">
+              <img class="extra__icon" src="/icons/extra.svg" alt="">
+              <span class="extra__skill">Github</span>
+            </li>
+            <li class="extra__item">
+              <img class="extra__icon" src="/icons/extra.svg" alt="">
+              <span class="extra__skill">jQuery</span>
+            </li>
+          </ul>
+        </div>
+        <div class="aside__item aside__item--cv">
+          <a href="#" download class="cv__btn">
+            Download CV
+            <!-- <img src="icons/download.svg" alt=""> -->
+            <svg width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_3_332)">
+                <path
+                  d="M2.33341 12.9523H11.6667V8.28564H12.8334V13.619C12.8334 13.7958 12.772 13.9654 12.6626 14.0904C12.5532 14.2154 12.4048 14.2856 12.2501 14.2856H1.75008C1.59537 14.2856 1.447 14.2154 1.3376 14.0904C1.22821 13.9654 1.16675 13.7958 1.16675 13.619V8.28564H2.33341V12.9523ZM8.16675 6.28564H11.0834L7.00008 10.9523L2.91675 6.28564H5.83342V2.28564H8.16675V6.28564Z" />
+              </g>
+              <defs>
+                <clipPath id="clip0_3_332">
+                  <rect width="14" height="16" fill="white" transform="translate(0 0.285645)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
     </aside>
-    <section>
-
+    <section class="section" id="home">
+      <div class="hire-me__wrapper">
+        <div class="hire-me__content">
+          <div class="hire-me__info">
+            <h1 class="hire-me__header-txt">
+              I'm Juan Miguel Pallo
+              <br>
+              <span class="hire-me--primary-clr">Software</span>
+              Developer
+            </h1>
+            <p class="hire-me__sub">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque
+              rutrum semper sed suspendisse nunc lectus.
+            </p>
+            <button class="hire-me__btn">
+              Hire Me
+              <!-- <img src="/icons/arrow-right.svg"> -->
+              <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.78117 5.33312L5.20517 1.75712L6.14784 0.814453L11.3332 5.99979L6.14784 11.1851L5.20517 10.2425L8.78117 6.66645H0.666504V5.33312H8.78117Z" />
+              </svg>
+            </button>
+          </div>
+          <div class="hire-me__img">
+            <picture>
+              <source media="" srcset="">
+              <img src="/images/JUAN_MIGUEL_ANDOY_PICTORIAL_NO_BG.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="tech">
+      <h1 class="section__header">Tech Stack</h1>
+      <p class="section__sub">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+        velit mollit. lorem ipsum
+      </p>
+      <div class="tech__grid">
+        <div class="tech__item">
+          <div class="tech__img">
+            <!-- html5 -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path
+                d="M 45.273438 2.324219 C 45.085938 2.117188 44.816406 2 44.535156 2 L 5.464844 2 C 5.183594 2 4.914063 2.117188 4.726563 2.324219 C 4.535156 2.53125 4.441406 2.808594 4.46875 3.089844 L 7.988281 42.515625 C 8.023438 42.929688 8.3125 43.273438 8.710938 43.390625 L 24.722656 47.960938 C 24.808594 47.988281 24.902344 48 24.996094 48 C 25.089844 48 25.179688 47.988281 25.269531 47.960938 L 41.292969 43.390625 C 41.691406 43.273438 41.976563 42.929688 42.015625 42.515625 L 45.53125 3.089844 C 45.558594 2.808594 45.464844 2.53125 45.273438 2.324219 Z M 36.847656 15.917969 L 18.035156 15.917969 L 18.484375 21.007813 L 36.394531 21.007813 L 35.050781 36.050781 L 24.992188 39.089844 L 24.894531 39.058594 L 14.953125 36.046875 L 14.410156 29.917969 L 19.28125 29.917969 L 19.492188 32.296875 L 25.050781 33.460938 L 30.507813 32.296875 L 31.089844 25.859375 L 14.046875 25.859375 L 12.722656 11.054688 L 37.28125 11.054688 Z" />
+            </svg>
+          </div>
+          <h1 class="tech__header">HTML 5</h1>
+          <p class="tech__sub">2&plus; years</p>
+        </div>
+        <div class="tech__item">
+          <div class="tech__img">
+            <!-- css -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill-rule="evenodd">
+              <path fill-rule="evenodd"
+                d="M 42 6 L 39 40 L 25 44 L 11 40 L 8 6 Z M 16.800781 28 L 20.800781 28 L 20.898438 30.5 L 25 31.898438 L 29.101563 30.5 L 29.398438 26 L 20.601563 26 L 20.398438 22 L 29.601563 22 L 29.898438 18 L 16.101563 18 L 15.800781 14 L 34.101563 14 L 33.601563 22 L 32.898438 33.5 L 25 36.101563 L 17.101563 33.5 Z" />
+            </svg>
+          </div>
+          <h1 class="tech__header">CSS 3</h1>
+          <p class="tech__sub">2&plus; years</p>
+        </div>
+        <div class="tech__item">
+          <div class="tech__img">
+            <!-- angular -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path
+                d="M 24.929688 2.0019531 C 24.819813 2.0024531 24.709016 2.0206406 24.603516 2.0566406 L 3.671875 9.3417969 C 3.227875 9.4957969 2.9498125 9.93925 3.0078125 10.40625 L 6.3164062 37.529297 C 6.3554062 37.850297 6.5450781 38.133109 6.8300781 38.287109 L 24.478516 47.878906 C 24.626516 47.959906 24.791078 48 24.955078 48 C 25.120078 48 25.286547 47.958953 25.435547 47.876953 L 43.173828 38.154297 C 43.455828 37.999297 43.647547 37.717438 43.685547 37.398438 L 46.992188 10.277344 C 47.050187 9.8083437 46.769312 9.3609844 46.320312 9.2089844 L 25.253906 2.0527344 C 25.148906 2.0177344 25.039562 2.0014531 24.929688 2.0019531 z M 25 7 L 38 35 L 33.5625 35 L 30.78125 29.007812 L 19.21875 29.007812 L 16.4375 35 L 12 35 L 25 7 z M 25 16.5 L 21.080078 25 L 28.919922 25 L 25 16.5 z" />
+            </svg>
+          </div>
+          <h1 class="tech__header">Angular</h1>
+          <p class="tech__sub">1 year</p>
+        </div>
+        <div class="tech__item">
+          <div class="tech__img">
+            <!-- JavaScript -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path
+                d="M45.274,2.325C45.084,2.118,44.817,2,44.536,2H5.464C5.183,2,4.916,2.118,4.726,2.325S4.443,2.81,4.468,3.089l3.52,39.427 c0.037,0.412,0.324,0.759,0.722,0.873l16.01,4.573C24.809,47.987,24.902,48,24.994,48s0.185-0.013,0.274-0.038l16.024-4.573 c0.398-0.114,0.685-0.461,0.722-0.873l3.518-39.427C45.557,2.81,45.463,2.532,45.274,2.325z M12,29.004l7,1.942V11h4v26l-11-3.051 V29.004z M38.054,22L37,34.25L27,37v-4.601l6.75-1.855l0.25-3.75L27,28V11h12l-0.345,4H31v8L38.054,22z" />
+            </svg>
+          </div>
+          <h1 class="tech__header">JavaScript</h1>
+          <p class="tech__sub">2&plus; year</p>
+        </div>
+        <div class="tech__item">
+          <div class="tech__img">
+            <!-- Git -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="500px" height="500px">
+              <path
+                d="M 46.792969 22.089844 L 27.910156 3.207031 C 27.109375 2.402344 26.054688 2 25 2 C 23.945313 2 22.890625 2.402344 22.089844 3.207031 L 18.355469 6.941406 L 22.976563 11.5625 C 24.511719 10.660156 26.511719 10.855469 27.828125 12.171875 C 29.144531 13.488281 29.335938 15.488281 28.433594 17.019531 L 32.976563 21.5625 C 34.511719 20.660156 36.511719 20.855469 37.828125 22.171875 C 39.390625 23.734375 39.390625 26.265625 37.828125 27.828125 C 36.265625 29.390625 33.734375 29.390625 32.171875 27.828125 C 30.855469 26.511719 30.660156 24.511719 31.5625 22.976563 L 27.019531 18.433594 C 26.695313 18.625 26.355469 18.765625 26 18.855469 L 26 31.140625 C 27.722656 31.585938 29 33.136719 29 35 C 29 37.210938 27.210938 39 25 39 C 22.789063 39 21 37.210938 21 35 C 21 33.136719 22.277344 31.585938 24 31.140625 L 24 18.855469 C 23.332031 18.683594 22.695313 18.351563 22.171875 17.828125 C 20.855469 16.511719 20.664063 14.511719 21.566406 12.980469 L 16.941406 8.355469 L 3.207031 22.089844 C 1.597656 23.695313 1.597656 26.304688 3.207031 27.910156 L 22.089844 46.792969 C 22.890625 47.597656 23.945313 48 25 48 C 26.054688 48 27.109375 47.597656 27.910156 46.792969 L 46.792969 27.910156 C 48.402344 26.304688 48.402344 23.695313 46.792969 22.089844 Z" />
+            </svg>
+          </div>
+          <h1 class="tech__header">Git</h1>
+          <p class="tech__sub">2&plus; years</p>
+        </div>
+        <div class="tech__item">
+          <div class="tech__img">
+            <!-- C# -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path
+                d="M 25 2 C 24.285156 2 23.570313 2.179688 22.933594 2.539063 L 6.089844 12.003906 C 4.800781 12.726563 4 14.082031 4 15.535156 L 4 34.464844 C 4 35.917969 4.800781 37.273438 6.089844 37.996094 L 22.933594 47.460938 C 23.570313 47.820313 24.285156 48 25 48 C 25.714844 48 26.429688 47.820313 27.066406 47.460938 L 43.910156 38 C 45.199219 37.273438 46 35.917969 46 34.464844 L 46 15.535156 C 46 14.082031 45.199219 12.726563 43.910156 12.003906 L 27.066406 2.539063 C 26.429688 2.179688 25.714844 2 25 2 Z M 25 13 C 28.78125 13 32.277344 14.753906 34.542969 17.738281 L 30.160156 20.277344 C 28.84375 18.835938 26.972656 18 25 18 C 21.140625 18 18 21.140625 18 25 C 18 28.859375 21.140625 32 25 32 C 26.972656 32 28.84375 31.164063 30.160156 29.722656 L 34.542969 32.261719 C 32.277344 35.246094 28.78125 37 25 37 C 18.382813 37 13 31.617188 13 25 C 13 18.382813 18.382813 13 25 13 Z M 35 20 L 37 20 L 37 22 L 39 22 L 39 20 L 41 20 L 41 22 L 43 22 L 43 24 L 41 24 L 41 26 L 43 26 L 43 28 L 41 28 L 41 30 L 39 30 L 39 28 L 37 28 L 37 30 L 35 30 L 35 28 L 33 28 L 33 26 L 35 26 L 35 24 L 33 24 L 33 22 L 35 22 Z M 37 24 L 37 26 L 39 26 L 39 24 Z" />
+            </svg>
+          </div>
+          <h1 class="tech__header">C# (ASP.net, MVC, Web Forms)</h1>
+          <p class="tech__sub">2 years</p>
+        </div>
+        <div class="tech__item">
+          <div class="tech__img">
+            <!-- Ionic -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path
+                d="M 25 2 C 12.318 2 2 12.317 2 25 C 2 37.683 12.318 48 25 48 C 37.682 48 48 37.683 48 25 C 48 21.575 47.241578 18.324391 45.892578 15.400391 C 44.967578 16.911391 43.528453 18.073859 41.814453 18.630859 C 42.568453 20.614859 43 22.755 43 25 C 43 34.925 34.925 43 25 43 C 15.075 43 7 34.925 7 25 C 7 15.075 15.075 7 25 7 C 27.7 7 30.252734 7.6135937 32.552734 8.6835938 C 33.227734 7.0235937 34.480547 5.6617969 36.060547 4.8417969 C 32.776547 3.0317969 29.007 2 25 2 z M 39.5 6 A 5.5 5.5 0 0 0 34 11.5 A 5.5 5.5 0 0 0 39.5 17 A 5.5 5.5 0 0 0 45 11.5 A 5.5 5.5 0 0 0 39.5 6 z M 25 15 A 10 10 0 0 0 15 25 A 10 10 0 0 0 25 35 A 10 10 0 0 0 35 25 A 10 10 0 0 0 25 15 z" />
+            </svg>
+          </div>
+          <h1 class="tech__header">Ionic Framework</h1>
+          <p class="tech__sub">1 year</p>
+        </div>
+        <div class="tech__item">
+          <div class="tech__img">
+            <!-- Database -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 105.07 122.88"
+              xml:space="preserve">
+              <g>
+                <path class="st0"
+                  d="M52.53,0c28.87,0,52.27,10.96,52.27,24.46c0,13.51-23.41,24.46-52.27,24.46c-28.86,0-52.27-10.96-52.27-24.46 C0.26,10.96,23.67,0,52.53,0L52.53,0z M0.26,81.83v18.78c9.3,33.03,101.18,26.65,104.55-1.69V80.16 C100.22,111.27,7.61,113.51,0.26,81.83L0.26,81.83L0.26,81.83z M0,32.94v18.34c9.3,32.26,101.69,27.9,105.07,0.23V33.18 C100.47,63.57,7.35,63.88,0,32.94L0,32.94z M0,56.64v18.78c9.3,33.03,101.69,28.57,105.07,0.23V56.89C100.47,88,7.35,88.32,0,56.64 L0,56.64z" />
+              </g>
+            </svg>
+          </div>
+          <h1 class="tech__header">Database (MySQL, Firebase)</h1>
+          <p class="tech__sub">1 year</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="education">
+      <h1 class="section__header">Education</h1>
+      <p class="section__sub">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+        velit mollit. lorem ipsum
+      </p>
+      <div class="education__list">
+        <div class="education__item">
+          <div class="education__school">
+          </div>
+          <div class="education__info">
+          </div>
+        </div>
+        <div class="education__item">
+          <div class="education__school">
+          </div>
+          <div class="education__info">
+          </div>
+        </div>
+        <div class="education__item">
+          <div class="education__school">
+          </div>
+          <div class="education__info">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="history">
+      <h1 class="section__header">Work History</h1>
+      <p class="section__sub">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+        velit mollit. lorem ipsum
+      </p>
     </section>
   </main>
   <footer>
