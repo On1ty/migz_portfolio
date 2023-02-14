@@ -4,6 +4,7 @@
   --primary-clr: #ffb400;
   --txt-main-clr: #2b2b2b;
   --txt-sub-clr: #767676;
+  --light-clr: #fff;
 
   --bg-clr: #e4e6eb;
 
@@ -37,7 +38,8 @@ body {
   background-color: var(--bg-clr);
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+aside::-webkit-scrollbar {
   width: 0.3rem;
 }
 
@@ -45,7 +47,8 @@ body::-webkit-scrollbar {
   background-color: var(--txt-sub-clr);
 } */
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+aside::-webkit-scrollbar-thumb {
   background-color: var(--primary-clr);
   /* border: 5px solid var(--txt-sub-clr); */
   border-radius: 1em;
@@ -134,13 +137,16 @@ body::-webkit-scrollbar-thumb {
   width: var(--aside-width);
   height: 100%;
   background-color: var(--aside-bg);
+  overflow-y: auto;
 }
 
 .aside__contents {
   display: flex;
   flex-direction: column;
   padding-top: 3.125rem;
-  padding-inline: 2rem;
+  /* padding-inline: 2rem; */
+  width: calc(100% - 2rem);
+  margin: 0 auto;
   height: 100%;
 }
 
@@ -171,6 +177,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.125rem;
   text-transform: capitalize;
   margin-bottom: 0.938rem;
+  text-align: center;
 }
 
 .profile__job {
@@ -251,12 +258,18 @@ body::-webkit-scrollbar-thumb {
 .extra__skill {
   color: var(--txt-sub-clr);
   font-size: 0.938rem;
+  overflow-wrap: break-word;
 }
 
 .aside__item--cv {
   display: flex;
   height: 100%;
   align-items: flex-end;
+  /* position: sticky; */
+  /* bottom: 0; */
+  /* margin-top: 0.938rem; */
+  background-color: var(--light-clr);
+  padding: 1.5rem 0 0.8rem;
 }
 
 .cv__btn {
@@ -272,7 +285,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   text-decoration: none;
   color: var(--txt-main-clr);
-  margin-block: 2rem;
+  /* margin-block: 2rem; */
+  /* margin-bottom: 2rem; */
   font-size: 0.875rem;
   transition: color cubic-bezier(0.4, 0, 1, 1) var(--hire-me-trans);
 }
@@ -297,11 +311,11 @@ body::-webkit-scrollbar-thumb {
 
 .hire-me__wrapper {
   width: 100%;
-  background-image: url("/images/hire-me-bg.png");
-  background-position: center;
+  background-image: url("/images/home-bg.png");
+  background-position: bottom;
   background-color: #fff;
-  background-repeat: repeat;
-  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-size: cover;
   /* padding: 60px; */
   /* height: 29.188rem; */
   /* overflow: hidden; */
@@ -324,6 +338,7 @@ body::-webkit-scrollbar-thumb {
 .hire-me__info {
   /* padding-left: 3.75rem;
   padding-top: 3.75rem; */
+  margin-block: 1.8rem;
 }
 
 .hire-me__img {
@@ -359,7 +374,7 @@ body::-webkit-scrollbar-thumb {
   outline: none;
   text-transform: uppercase;
   padding: 16px 32px;
-  max-width: 154px;
+  max-width: 9.625rem;
   width: 100%;
   font-weight: 500;
   border-radius: 0.4em;
@@ -445,18 +460,46 @@ svg {
   margin-top: 0.5rem;
 }
 
-.education__list {
+.common__list {
   background-color: #fff;
-  padding-inline: 2.313rem;
   margin-top: 3.125rem;
+  padding: 4rem 2.313rem;
 }
 
-.education__item {
+.common__item {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  column-gap: .8rem;
+}
+
+.common__header {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+}
+
+.common__sub {
+  font-size: 1rem;
+  overflow-wrap: break-word;
   display: flex;
-  padding: 20px;
+  flex-wrap: wrap;
+  column-gap: .8rem;
 }
 
-.education__item:not(:last-child) {
+.common__year-span{
+  background-color: var(--primary-clr);
+  color: var(--light-clr);
+  padding-inline: .5rem;
+}
+
+.common__details {
+  color: var(--txt-sub-clr);
+  line-height: 1.5rem;
+  font-size: 0.938rem;
+  text-align: justify;
+}
+
+.common__item:not(:last-child) {
   border-bottom: 2px solid #f0f0f6;
 }
 
@@ -515,6 +558,15 @@ svg {
     padding: 3rem 1rem;
     grid-template-columns: 1fr;
   }
+
+  .common__item {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .common__header {
+    margin-bottom: .5rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -534,9 +586,9 @@ svg {
 }
 
 @media screen and (max-width: 768px) {
-    .tech__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .tech__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .tech__header {
     font-size: 1rem;

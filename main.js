@@ -1,6 +1,6 @@
 // import './style.css'
 // import javascriptLogo from './javascript.svg'
-// import { setupCounter } from './counter.js'
+import { calculateMyAge } from './functions.js'
 
 // document.querySelector('#app').innerHTML = `
 //   <div>
@@ -21,3 +21,6 @@
 // `
 
 // setupCounter(document.querySelector('#counter'))
+
+const ageElem = document.querySelector('[data-age]');
+ageElem.innerHTML = calculateMyAge();
